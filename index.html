@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Oréal | Beauty Chatbot</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Elegant fonts that fit L'Oréal's polished brand feel -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!------- Header / Branding ------->
+      <header class="site-header">
+        <img
+          src="img/loreal-logo.png"
+          alt="L'Oréal"
+          class="brand-logo"
+        />
+        <h1 class="site-title">Beauty Chatbot</h1>
+        <p class="site-tagline">
+          Ask about makeup, skincare, haircare, fragrances, and routines.
+        </p>
+      </header>
+
+      <!------- Chat Area ------->
+      <main>
+        <section class="chatbox">
+          <!-- Latest user question shown above the reply (LevelUp) -->
+          <p id="latestQuestion" class="latest-question" hidden></p>
+
+          <div id="chatWindow" class="chat-window" aria-live="polite">
+            <!-- messages will be appended here via JS -->
+          </div>
+
+          <form id="chatForm" class="chat-form">
+            <label for="userInput" class="visually-hidden">Message</label>
+            <input
+              id="userInput"
+              name="userInput"
+              type="text"
+              placeholder="Ask me about L'Oréal products or routines…"
+              autocomplete="off"
+              required
+            />
+            <button type="submit" id="sendBtn">
+              <span class="material-icons">send</span>
+              <span class="visually-hidden">Send</span>
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <!------- Footer Links ------->
+      <footer class="site-footer">
+        <p>&copy; 2025 L'Oréal. All rights reserved.</p>
+        <nav>
+          <a href="https://www.loreal.com/" target="_blank" rel="noopener"
+            >L'Oréal.com</a
+          >
+          <a
+            href="https://www.loreal.com/en/usa/pages/group/privacy-policy-usa/"
+            target="_blank"
+            rel="noopener"
+            >Privacy Policy</a
+          >
+          <a
+            href="https://www.lorealparisusa.com/terms-and-conditions"
+            target="_blank"
+            rel="noopener"
+            >Terms of Use</a
+          >
+        </nav>
+      </footer>
+    </div>
+
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
